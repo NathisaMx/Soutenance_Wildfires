@@ -26,7 +26,6 @@ if page == pages[0] :
     st.divider()
     st.write("https://www.fs.usda.gov/rds/archive/catalog/RDS-2013-0009.6")
     st.divider()
-    st.image("SweetCrk-Milepost2Fire-Marcus-Kauffman.jpg")
 
 if page == pages[1] :
     st.write("## Volumétrie du jeu de données")
