@@ -62,22 +62,22 @@ if page == pages[0] :
             st.write('Quelques prédictions du RandomForestClassifier (15 premières lignes) :')
             st.image("Tableau des valeurs réelles et prédites.png")
 
-    # svm
-    elif selected_model == "SVM":
-        col1, col2, col3 = st.columns(3)
-        col1.metric("Score X_test", "0.6731054426812991")
-        
-        # Gradient Bosting 
-
-    elif selected_model == "Gradient Boosting":
-        col1, col2, col3 = st.columns(3)
-        col1.metric("Score X_test", "0.6499147263829156")
-        
-        #  KNN
-
-    elif selected_model == "knn":
-        col1, col2, col3 = st.columns(3)
-        col1.metric("Score X_test", "0.6440753373869198")
+        # svm
+        elif selected_model == "SVM":
+            col1, col2, col3 = st.columns(3)
+            col1.metric("Score X_test", "0.6731054426812991")
+            
+            # Gradient Bosting 
+    
+        elif selected_model == "Gradient Boosting":
+            col1, col2, col3 = st.columns(3)
+            col1.metric("Score X_test", "0.6499147263829156")
+            
+            #  KNN
+    
+        elif selected_model == "knn":
+            col1, col2, col3 = st.columns(3)
+            col1.metric("Score X_test", "0.6440753373869198")
       
     with tab2:
         selected_test = st.radio("Sélectionnez un test", ["Kruskal-Wallis", 
