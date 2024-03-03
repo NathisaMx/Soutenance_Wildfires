@@ -11,7 +11,7 @@ if page == pages[0] :
     tab1, tab2= st.tabs(["Tests Statistiques","Modèles de classification"])
 
 
-     with tab1:
+    with tab1:
         selected_test = st.radio("Sélectionnez un test", ["Kruskal-Wallis", 
                                                       "Corrélation Pearson", 
                                                       "Corrélation Spearman"])
