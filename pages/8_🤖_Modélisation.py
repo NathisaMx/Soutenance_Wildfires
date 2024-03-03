@@ -14,6 +14,19 @@ if page == pages[0] :
         st.write('##### Dataset : <span style="color:red;">[2018, 2019, 2020]</span>', unsafe_allow_html=True)
         st.write('**Proportion du jeu de test :** <span style="color:red;">**25%**</span>', unsafe_allow_html=True)
         test_size_percentage = st.slider("Le pourcentage du jeu de test", 20, 30, 25)
+
+
+        col1, col2, col3 = st.columns([2,2,2])
+        col1.markdown("<h4 style='text-align: center;'>LogisticRegression</h4>", unsafe_allow_html=True)
+        col2.markdown("<h4 style='text-align: center;'>DecisionTreeClassifier</h4>", unsafe_allow_html=True)
+        col3.markdown("<h4 style='text-align: center;'>RandomForestClassifier</h4>", unsafe_allow_html=True)
+        col1, col2, col3 = st.columns([2,2,2])
+        col1.metric("Score X_test", "0.6471896781847842")
+        col2.metric("Score X_test", "0.5963221118196649")
+        col3.metric("Score X_test", "0.6554204360077117")
+
+
+        
         selected_model = st.radio("Sélectionnez un modèle", ["LogisticRegression", "DecisionTreeClassifier", "RandomForestClassifier", "SVM", "Gradient Boosting", "knn"])
 
         if selected_model == "LogisticRegression":
